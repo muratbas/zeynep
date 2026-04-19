@@ -86,8 +86,8 @@ export default function HeroSection() {
 
         {/* Açıklama */}
         <p className="fade-in-up delay-400 mt-5 text-[#574146] text-base md:text-lg max-w-md mx-auto leading-relaxed">
-          26 Mart&apos;tan bu yana yaşadığımız her anı, melodiyi{" "}
-          ve gülüşü sakladığım yer.
+          26 Mart&apos;tan bu yana yaşadığımız her anı{" "}
+          ve gülüşü saklayacağım yer.
         </p>
 
         {/* Gün sayacı */}
