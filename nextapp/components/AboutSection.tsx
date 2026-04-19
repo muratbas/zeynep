@@ -5,6 +5,7 @@ import { facts } from "@/data/facts";
 
 export default function AboutSection() {
   const [zeynepAnswers, setZeynepAnswers] = useState<Record<number, string>>({});
+  const [isLocked, setIsLocked] = useState(false);
 
   const handleChange = (id: number, value: string) => {
     setZeynepAnswers((prev) => ({ ...prev, [id]: value }));
@@ -66,14 +67,20 @@ export default function AboutSection() {
                 </p>
               </div>
               {/* Zeynep tarafı */}
-              <div className="p-5 md:p-8 bg-white">
-                <input
-                  type="text"
-                  value={zeynepAnswers[row.id] ?? ""}
-                  onChange={(e) => handleChange(row.id, e.target.value)}
-                  placeholder={row.zeynepPlaceholder}
-                  className="w-full bg-transparent border-b border-[#8a7176] focus:border-[#901448] text-[#805062] placeholder:text-[#ddbfc5] transition-colors py-1 text-sm md:text-base caret-[#901448]"
-                />
+              <div className="p-5 md:p-8 bg-white flex flex-col justify-center">
+                {isLocked ? (
+                  <p className="w-full text-[#805062] py-1 text-sm md:text-base border-b border-transparent">
+                    {zeynepAnswers[row.id] || <span className="opacity-50 italic">{row.zeynepPlaceholder}</span>}
+                  </p>
+                ) : (
+                  <input
+                    type="text"
+                    value={zeynepAnswers[row.id] ?? ""}
+                    onChange={(e) => handleChange(row.id, e.target.value)}
+                    placeholder={row.zeynepPlaceholder}
+                    className="w-full bg-transparent border-b border-[#8a7176] focus:border-[#901448] text-[#805062] placeholder:text-[#ddbfc5] transition-colors py-1 text-sm md:text-base caret-[#901448]"
+                  />
+                )}
               </div>
             </div>
           ))}
@@ -86,15 +93,20 @@ export default function AboutSection() {
               </p>
             </div>
             <div className="p-5 md:p-8 bg-white flex items-center">
-              <div className="flex items-center gap-2 text-[#805062] italic font-[var(--font-noto-serif)]">
+              <button 
+                onClick={() => setIsLocked(!isLocked)}
+                className="flex items-center gap-2 text-[#805062] italic font-[var(--font-noto-serif)] hover:opacity-70 transition-opacity cursor-pointer group"
+              >
                 <span
-                  className="material-symbols-outlined text-sm text-[#c3004e] heartbeat"
+                  className={`material-symbols-outlined text-sm text-[#c3004e] transition-transform ${isLocked ? "" : "heartbeat"}`}
                   style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}
                 >
-                  favorite
+                  {isLocked ? "lock" : "favorite"}
                 </span>
-                <span className="text-sm md:text-base">Cevabını bekliyorum...</span>
-              </div>
+                <span className="text-sm md:text-base select-none">
+                  {isLocked ? "Düzenlemeye devam et..." : "Cevabı kaydet..."}
+                </span>
+              </button>
             </div>
           </div>
         </div>

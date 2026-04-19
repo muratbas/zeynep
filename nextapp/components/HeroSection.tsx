@@ -75,7 +75,7 @@ export default function HeroSection() {
       <div className="relative z-10 text-center max-w-2xl mx-auto w-full">
         {/* Alt başlık */}
         <span className="fade-in-up delay-100 font-[var(--font-noto-serif)] italic text-[#901448] text-base md:text-lg mb-3 block tracking-wide">
-          Piksellerle yazılmış bir aşk mektubu
+          
         </span>
 
         {/* Ana başlık */}
