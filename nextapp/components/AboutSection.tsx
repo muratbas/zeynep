@@ -19,7 +19,7 @@ export default function AboutSection() {
           
           <h2 className="font-[var(--font-noto-serif)] text-3xl md:text-5xl text-[#901448] font-bold tracking-tight leading-tight mb-2">
             Benim Hakkımda<br />
-            <span className="italic font-normal">Bilmen Gereken 10 Şey</span>
+            <span className="italic font-normal">Bilmen Gerekenler</span>
           </h2>
           <p className="text-[#574146] text-sm mt-2">
             Sağ taraftaki boşlukları sen doldur 🤍

@@ -1,4 +1,4 @@
-// PLACEHOLDER: Murat hakkındaki gerçekleri Murat güncelleyecek
+""// PLACEHOLDER: Murat hakkındaki gerçekleri Murat güncelleyecek
 // Her satır için: muratFact (Murat'ın gerçeği), zeynepPlaceholder (Zeynep'in inputu için placeholder)
 
 export interface FactRow {
@@ -11,7 +11,7 @@ export const facts: FactRow[] = [
   {
     id: 1,
     muratFact: "[Placeholder] Sabahları ilk işim filtre kahve içmek.",
-    zeynepPlaceholder: "Senin sabah ritüelin...",
+    zeynepPlaceholder: "Benim hakkımda ilk ne düşündün...",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const facts: FactRow[] = [
   },
   {
     id: 4,
-    muratFact: "[Placeholder] En sevdiğim renk aslında koyu yeşil.",
+    muratFact: "En sevdiğim renk mavi.",
     zeynepPlaceholder: "Senin favori rengin...",
   },
   {
