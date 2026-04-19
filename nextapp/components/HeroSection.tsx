@@ -112,15 +112,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll ok */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-0.5 opacity-50">
-        <span className="text-[10px] text-[#805062] tracking-[0.2em] uppercase font-semibold">
-          keşfet
-        </span>
-        <span className="material-symbols-outlined text-[#805062] animate-bounce">
-          keyboard_arrow_down
-        </span>
-      </div>
+
     </section>
   );
 }

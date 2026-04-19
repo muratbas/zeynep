@@ -15,15 +15,13 @@ export default function AboutSection() {
       <div className="max-w-4xl mx-auto">
         {/* Başlık */}
         <div className="mb-10 md:mb-14">
-          <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#805062] mb-2 block">
-            Seni Keşfetmek İstiyorum
-          </span>
+          
           <h2 className="font-[var(--font-noto-serif)] text-3xl md:text-5xl text-[#901448] font-bold tracking-tight leading-tight mb-2">
-            Murat Hakkında<br />
+            Benim Hakkımda<br />
             <span className="italic font-normal">Bilmen Gereken 10 Şey</span>
           </h2>
           <p className="text-[#574146] text-sm mt-2">
-            Sağ taraftaki boşlukları sen doldur — seni tanımak istiyorum. 🤍
+            Sağ taraftaki boşlukları sen doldur 🤍
           </p>
         </div>
 
@@ -37,7 +35,7 @@ export default function AboutSection() {
                   className="material-symbols-outlined text-sm"
                   style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}
                 >
-                  person
+                  
                 </span>
                 Murat
               </h4>

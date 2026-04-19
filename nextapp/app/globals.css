@@ -130,6 +130,13 @@ body {
   90%  { opacity: 0.35; }
   100% { transform: translateY(105vh) rotate(720deg); opacity: 0; }
 }
+
+/* ── Heart Click Float Up ─────────────────────────────── */
+@keyframes heartFloatUp {
+  0%   { opacity: 1;   transform: translate(-50%, -50%) scale(1)    translateY(0px); }
+  60%  { opacity: 0.8; transform: translate(-50%, -50%) scale(1.25) translateY(-35px); }
+  100% { opacity: 0;   transform: translate(-50%, -50%) scale(0.8)  translateY(-65px); }
+}
 .petal {
   position: fixed;
   pointer-events: none;
