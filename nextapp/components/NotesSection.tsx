@@ -66,7 +66,6 @@ export default function NotesSection() {
 
   const handleDeleteNote = async (id?: string) => {
     if (!id) return;
-    if (!confirm("Bu notu silmek istediğine emin misin?")) return;
     try {
       await deleteDoc(doc(db, "notes", id));
     } catch (error) {
