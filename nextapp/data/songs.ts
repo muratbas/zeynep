@@ -42,4 +42,4 @@ export const songs: Song[] = [
 ];
 
 // PLACEHOLDER: Spotify listesini Murat güncelleyecek
-export const SPOTIFY_LINK = "https://open.spotify.com/playlist/PLACEHOLDER";
+export const SPOTIFY_LINK = "https://open.spotify.com/playlist/4n0fH5izrosgO9awqcNxgH?si=3164504074aa470b";

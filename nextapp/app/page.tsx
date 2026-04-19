@@ -3,7 +3,6 @@ import HeroSection from "@/components/HeroSection";
 import PlaylistSection from "@/components/PlaylistSection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
-import FAB from "@/components/FAB";
 import HeartClickEffect from "@/components/HeartClickEffect";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
         <AboutSection />
       </main>
       <Footer />
-      <FAB />
     </>
   );
 }
